@@ -1,0 +1,15 @@
+.header {
+	display: flex;
+	width: 100%;
+	padding-block: 12px;
+	background-color: white;
+	border-bottom: 2px solid #f2f4f5;
+	flex-direction: column;
+	gap: 12px;
+}
+.title {
+	font-size: 28px;
+}
+.date {
+	font-size: 16px;
+}

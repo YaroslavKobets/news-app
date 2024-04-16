@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+body {
+	max-width: 1200px;
+	margin-inline: auto;
+	padding-inline: 15px;
+}
+.container {
+	min-height: 100vh;
+}
+@media (max-width: 768px) {
+	body {
+		padding-inline: 12px;
+	}
+}

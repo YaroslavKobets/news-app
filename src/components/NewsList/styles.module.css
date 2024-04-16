@@ -1,0 +1,11 @@
+.list {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+	gap: 24px;
+}
+@media (max-width: 480px) {
+	.list {
+		grid-template-columns: auto;
+	}
+}
