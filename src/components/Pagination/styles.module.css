@@ -1,0 +1,43 @@
+.pagination {
+	display: flex;
+	width: 100%;
+	gap: 4px;
+	align-items: center;
+	justify-content: center;
+}
+.pageNumber,
+.arrow {
+	width: 24px;
+	height: 24px;
+	border: none;
+	background-color: #f65050;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: box-shadow 0.3s, color 0.2s, opacity 0.3s, background-color 0.3s;
+	transition-timing-function: ease-in-out;
+}
+.pageNumber:hover,
+.arrow:hover {
+	box-shadow: 0 0 0 15px inset #fff, 0 0 0 1px red;
+	color: #f65050;
+}
+.pageNumber:disabled {
+	background-color: #08f;
+	box-shadow: none;
+	color: #fff;
+	pointer-events: none;
+}
+.arrow:disabled {
+	background-color: #393939;
+	opacity: 0.2;
+	color: #fff;
+	pointer-events: none;
+}
+.list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+}
