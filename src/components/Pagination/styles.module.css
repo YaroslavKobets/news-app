@@ -1,18 +1,19 @@
 .pagination {
-	display: flex;
-	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	max-width: 360px;
 	gap: 4px;
-	align-items: center;
-	justify-content: center;
+	margin-inline: auto;
+	justify-items: center;
 }
 .pageNumber,
 .arrow {
-	width: 24px;
-	height: 24px;
+	width: 21px;
+	height: 21px;
 	border: none;
 	background-color: #f65050;
 	color: #fff;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 500;
 	cursor: pointer;
 	transition: box-shadow 0.3s, color 0.2s, opacity 0.3s, background-color 0.3s;
@@ -34,10 +35,4 @@
 	opacity: 0.2;
 	color: #fff;
 	pointer-events: none;
-}
-.list {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 4px;
 }
