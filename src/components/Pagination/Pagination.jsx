@@ -16,20 +16,18 @@ const Pagination = ({
 			>
 				{'←'}
 			</button>
-			<div className={styles.list}>
-				{[...Array(totalPages)].map((_, index) => {
-					return (
-						<button
-							onClick={() => handlePageClick(index + 1)}
-							key={index}
-							disabled={index + 1 === currentPage}
-							className={styles.pageNumber}
-						>
-							{index + 1}
-						</button>
-					)
-				})}
-			</div>
+			{[...Array(totalPages)].map((_, index) => {
+				return (
+					<button
+						onClick={() => handlePageClick(index + 1)}
+						key={index}
+						disabled={index + 1 === currentPage}
+						className={styles.pageNumber}
+					>
+						{index + 1}
+					</button>
+				)
+			})}
 			<button
 				onClick={handleNextPage}
 				disabled={currentPage >= totalPages}
