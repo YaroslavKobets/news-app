@@ -8,6 +8,7 @@ export const getNews = async ({
 	page_size = 10,
 	language = 'en',
 	category,
+	keywords,
 }) => {
 	try {
 		const response = await axios.get(`${BASE_URL}search`, {
@@ -17,6 +18,7 @@ export const getNews = async ({
 				page_size,
 				language,
 				category,
+				keywords,
 			},
 		})
 
