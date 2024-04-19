@@ -1,0 +1,22 @@
+.search {
+	display: flex;
+	width: 100%;
+	gap: 12px;
+}
+
+.input {
+	width: 100%;
+	padding: 12px;
+	font-size: 16px;
+	line-height: 1.4;
+	font-weight: 500;
+	border: 1px solid #f65050;
+	outline: none;
+	transition-property: border-color, box-shadow;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.2s;
+}
+.input:focus {
+	border-color: #0088ff;
+	box-shadow: 0 0 0 1px inset #0088ff;
+}
