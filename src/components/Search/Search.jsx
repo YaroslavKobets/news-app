@@ -9,6 +9,7 @@ const Search = ({ keywords, setKeywords }) => {
 				onChange={e => setKeywords(e.target.value)}
 				className={styles.input}
 				placeholder='Search for'
+				
 			/>
 		</div>
 	)
